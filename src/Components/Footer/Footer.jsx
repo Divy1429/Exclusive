@@ -1,0 +1,214 @@
+import React from 'react';
+import qr from '../../assets/qr.png';
+import app from '../../assets/app.png';
+import google from '../../assets/google.png';
+
+export default function Footer() {
+  return (
+    <footer className="bg-black overflow-hidden text-white">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 sxl:px-8 pt-12 sxl:pt-20 pb-10 sxl:pb-15">
+        {/* Mobile & Tablet: 2 columns, Desktop: Auto-sized columns based on content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 sxl:flex sxl:justify-between gap-8 sxl:gap-[87px]">
+          
+          {/* Exclusive Section - Natural width based on content */}
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold font-inter">Exclusive</h3>
+              <h4 className="text-xl font-medium">Subscribe</h4>
+              <p className="text-base text-gray-300">Get 10% off your first order</p>
+            </div>
+            
+            <div className="relative w-[217px]">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full bg-transparent border border-white rounded pl-4 pr-[56px] py-3 text-base placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all"
+              />
+              <button 
+                className="absolute right-[15px] top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors"
+                aria-label="Subscribe"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.91199 11.9998H3.99999L2.02299 4.1348C2.01033 4.0891 2.00262 4.04216 1.99999 3.9948C1.97799 3.2738 2.77199 2.7738 3.45999 3.1038L22 11.9998L3.45999 20.8958C2.77999 21.2228 1.99599 20.7368 1.99999 20.0288C2.00201 19.9655 2.01313 19.9029 2.03299 19.8428L3.49999 14.9998" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Support Section - Natural width based on content */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-medium">Support</h3>
+            <address className="not-italic space-y-4 text-base text-gray-300">
+              <p>111 Bijoy sarani, Dhaka,<br />DH 1515, Bangladesh.</p>
+              <p>
+                <a href="mailto:exclusive@gmail.com" className="hover:text-white transition-colors">
+                  exclusive@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:+8801588888999" className="hover:text-white transition-colors">
+                  +88015-88888-9999
+                </a>
+              </p>
+            </address>
+          </div>
+
+          {/* Account Section - Natural width based on content */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-medium">Account</h3>
+            <nav>
+              <ul className="space-y-4 text-base">
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    My Account
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    Login / Register
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    Cart
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    Wishlist
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    Shop
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          {/* Quick Link Section - Natural width based on content */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-medium">Quick Link</h3>
+            <nav>
+              <ul className="space-y-4 text-base">
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    Terms Of Use
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          {/* Download App Section - Natural width based on content */}
+          <div className="space-y-2">
+            <div className="space-y-2">
+              <h3 className="text-xl font-medium">Download App</h3>
+              <p className="text-xs font-medium text-gray-400">Save $3 with App New User Only</p>
+            </div>
+            
+            <div className="space-y-2">
+              <div className="flex gap-2 items-center">
+                {/* QR Code */}
+                <div className="w-[76px] h-[76px] bg-white  border-[2.5px] border-white  flex items-center justify-center flex-shrink-0 ">
+                  <img src={qr} alt="" className="w-full h-full object-contain" />
+                </div>
+                
+                {/* App Store Buttons */}
+                <div className="flex flex-col gap-2">
+
+                  <div className="w-[110px] h-10 bg-gray-900 hover:bg-gray-800 border border-gray-700 rounded transition-colors">
+                    <img src={google} alt="" className="w-full h-full object-contain" />
+                  </div>
+
+                  <div className="w-[110px] h-10 bg-gray-900 hover:bg-gray-800 border border-gray-700 rounded transition-colors">
+                    <img src={app} alt="" className="w-full h-full object-contain" />
+                  </div>
+                  
+                  
+                </div>
+              </div>
+
+              {/* Social Media Icons */}
+              <div className="flex gap-6 pt-2">
+                <a 
+                  href="#" 
+                  className="text-white hover:text-gray-400 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 10H17.5L17 12H13V21H11V12H7V10H11V8.128C11 6.345 11.186 5.698 11.534 5.046C11.875 4.40181 12.4018 3.87501 13.046 3.534C13.698 3.186 14.345 3 16.128 3C16.65 3 17.108 3.05 17.5 3.15V5H16.128C14.804 5 14.401 5.078 13.99 5.298C13.686 5.46 13.46 5.686 13.298 5.99C13.078 6.401 13 6.804 13 8.128V10Z" fill="currentColor"/>
+                  </svg>
+                </a>
+                
+                <a 
+                  href="#" 
+                  className="text-white hover:text-gray-400 transition-colors"
+                  aria-label="Twitter"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1211 4.44336C14.9979 4.09254 15.9592 4.00852 16.8838 4.20117C17.8082 4.39388 18.6557 4.85462 19.3193 5.52637L19.3486 5.55664H19.3906C19.7296 5.55426 20.0806 5.59738 20.498 5.53809C20.882 5.48352 21.3278 5.34203 21.915 5.00977C21.6091 6.49447 21.4324 7.16729 20.7646 8.08301L20.7451 8.10938V8.14258C20.7451 11.9414 19.5781 14.7564 17.8262 16.7393C16.0729 18.7234 13.7275 19.8816 11.3623 20.3535C9.7452 20.6761 7.754 20.5731 5.99609 20.2109C5.11794 20.03 4.30096 19.7842 3.62012 19.4971C3.03699 19.2511 2.56006 18.9759 2.22949 18.6885C2.6606 18.6463 3.41195 18.553 4.24414 18.3594C5.24389 18.1267 6.37194 17.749 7.20312 17.1406L7.31934 17.0557L7.19922 16.9766C6.50766 16.5207 4.81165 15.4984 3.73145 13.5166C2.66701 11.5637 2.19288 8.66296 3.91406 4.42578C5.57929 6.34325 7.27273 7.66041 8.99512 8.36719C9.57627 8.60556 9.94226 8.72333 10.2314 8.79102C10.5195 8.85841 10.7322 8.8754 10.9922 8.91113L11.2871 8.95215L11.1074 8.77148C11.1323 7.84188 11.4255 6.93867 11.9541 6.17285C12.4906 5.3958 13.2444 4.79414 14.1211 4.44336Z" fill="currentColor" stroke="currentColor" strokeWidth="0.2"/>
+                  </svg>
+                </a>
+                
+                <a 
+                  href="#" 
+                  className="text-white hover:text-gray-400 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 3H7C5.93913 3 4.92172 3.42143 4.17157 4.17157C3.42143 4.92172 3 5.93913 3 7V17C3 18.0609 3.42143 19.0783 4.17157 19.8284C4.92172 20.5786 5.93913 21 7 21H17C18.0609 21 19.0783 20.5786 19.8284 19.8284C20.5786 19.0783 21 18.0609 21 17V7C21 5.93913 20.5786 4.92172 19.8284 4.17157C19.0783 3.42143 18.0609 3 17 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+                    <path d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16V16Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+                    <path d="M17.5 7.5C17.7652 7.5 18.0196 7.39464 18.2071 7.20711C18.3946 7.01957 18.5 6.76522 18.5 6.5C18.5 6.23478 18.3946 5.98043 18.2071 5.79289C18.0196 5.60536 17.7652 5.5 17.5 5.5C17.2348 5.5 16.9804 5.60536 16.7929 5.79289C16.6054 5.98043 16.5 6.23478 16.5 6.5C16.5 6.76522 16.6054 7.01957 16.7929 7.20711C16.9804 7.39464 17.2348 7.5 17.5 7.5Z" fill="currentColor"/>
+                  </svg>
+                </a>
+                
+                <a 
+                  href="#" 
+                  className="text-white hover:text-gray-400 transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5 9.05C12.417 8.113 13.611 7.5 15 7.5C16.4587 7.5 17.8576 8.07946 18.8891 9.11091C19.9205 10.1424 20.5 11.5413 20.5 13V20.5H18.5V13C18.5 12.0717 18.1313 11.1815 17.4749 10.5251C16.8185 9.86875 15.9283 9.5 15 9.5C14.0717 9.5 13.1815 9.86875 12.5251 10.5251C11.8687 11.1815 11.5 12.0717 11.5 13V20.5H9.5V8H11.5V9.05ZM4.5 6C4.10218 6 3.72064 5.84196 3.43934 5.56066C3.15804 5.27936 3 4.89782 3 4.5C3 4.10218 3.15804 3.72064 3.43934 3.43934C3.72064 3.15804 4.10218 3 4.5 3C4.89782 3 5.27936 3.15804 5.56066 3.43934C5.84196 3.72064 6 4.10218 6 4.5C6 4.89782 5.84196 5.27936 5.56066 5.56066C5.27936 5.84196 4.89782 6 4.5 6ZM3.5 8H5.5V20.5H3.5V8Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Copyright Section */}
+      <div className="border-t flex border-gray-800">
+        <div className="max-w-7xl flex gap-[6px] mx-auto  pt-4 pb-[24px]">
+          <div className="color-[#3d3d3d] items-center justify-center flex ">
+            <svg className="text-[#3d3d3d]  text-center " width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 18.3332C15.1024 18.3332 18.8334 14.6022 18.8334 9.99984C18.8334 5.39746 15.1024 1.6665 10.5 1.6665C5.89765 1.6665 2.16669 5.39746 2.16669 9.99984C2.16669 14.6022 5.89765 18.3332 10.5 18.3332Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 8.14799C13 8.14799 11.9706 6.6665 10.2549 6.6665C8.53924 6.6665 7.16669 8.14799 7.16669 9.99984C7.16669 11.8517 8.53924 13.3332 10.2549 13.3332C11.9706 13.3332 13 11.8517 13 11.8517" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+          </div>
+          <p className="text-center text-base text-[#3d3d3d]">
+             Copyright Rimel 2022. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

@@ -1,0 +1,31 @@
+/* index.css */
+@import "tailwindcss";
+
+@theme {
+
+
+  --breakpoint-sm:  640px;    /* 40rem */
+  --breakpoint-md:  768px;    /* 48rem */
+  --breakpoint-lg:  1024px;   /* 64rem */
+  --breakpoint-xl:  1280px;   /* 80rem */
+  --breakpoint-2xl: 1536px;   /* 96rem */
+
+  
+  /* Your custom breakpoints - fixed */
+  --breakpoint-msm: 42.6875rem;    /* 683px */
+  --breakpoint-mlg: 56.625rem;     /* 906px */
+  --breakpoint-jxl: 75rem; /* 1200px */
+
+   --breakpoint-x1sxl: 77.1875rem; 
+  --breakpoint-mdl: 85rem;         /* 1360px - keep this one */
+  --breakpoint-sxl: 90rem;         /* 1440px */
+}
+
+
+/* 🔧 Minimal global styles */
+
+/* 🌐 Optional: Global defaults */
+* {
+  box-sizing: border-box;
+  
+}
