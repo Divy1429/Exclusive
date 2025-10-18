@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import one from '../../Assets/1.png';
-import three from '../../Assets/3.png';
+import one from '../../assets/1.png';
+import three from '../../assets/3.png';
 
 const Checkout = () => {
   const [formData, setFormData] = useState({

@@ -1,7 +1,7 @@
-import ps5 from '../../../Assets/ps5.png';
-import woman from '../../../Assets/woman.png';
-import alexa from '../../../Assets/alexa.png';
-import spray from '../../../Assets/spray.png';  
+import ps5 from '../../../assets/ps5.png';
+import woman from '../../../assets/woman.png';
+import alexa from '../../../assets/alexa.png';
+import spray from '../../../assets/spray.png';  
 
 const NewArrival = () => {
   return (

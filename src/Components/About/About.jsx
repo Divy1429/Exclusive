@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import girls from '../../Assets/girls.png';
-import tom from '../../Assets/tom.png';
-import emma from '../../Assets/emma.png';
-import will from '../../Assets/will.png';
+import girls from '../../assets/girls.png';
+import tom from '../../assets/tom.png';
+import emma from '../../assets/emma.png';
+import will from '../../assets/will.png';
 import Advertisement from '../Home/Advertisement/Advertisement';
 
 const About = () => {
