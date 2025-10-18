@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import girls from '../../Assets/girls.png';
 import tom from '../../Assets/tom.png';
 import emma from '../../Assets/emma.png';
@@ -11,12 +12,12 @@ const About = () => {
       {/* Breadcrumb */}
       <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-6 lg:px-0 xl:max-w-[1170px] 2xl:max-w-[1170px] pt-4 sm:pt-6 lg:pt-20">
         <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm mb-6 sm:mb-8 lg:mb-12">
-          <a
-            href="#"
-            className="text-gray-400 hover:text-black transition-colors  focus-visible:outline-2 focus-visible:outline-red-500 outline-offset-2"
+          <Link
+            to="/"
+            className="text-gray-400 hover:text-black transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-red-500 outline-offset-2"
           >
             Home
-          </a>
+          </Link>
           <span className="text-gray-400">/</span>
           <span className="text-black font-medium">About</span>
         </div>

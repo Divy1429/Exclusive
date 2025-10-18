@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import one from '../../Assets/1.png';
 import three from '../../Assets/3.png';
 
@@ -54,13 +55,13 @@ const Checkout = () => {
         
         {/* Breadcrumb */}
         <div className="flex flex-wrap  items-center gap-2 text-sm mb-8 sm:mb-12 lg:mb-16 ">
-          <span className="text-gray-400 hover:text-black cursor-pointer transition-colors">Account</span>
+          <Link to="/my-account" className="text-gray-400 hover:text-black cursor-pointer transition-colors">Account</Link>
           <span className="text-gray-400">/</span>
-          <span className="text-gray-400 hover:text-black cursor-pointer transition-colors">My Account</span>
+          <Link to="/my-account" className="text-gray-400 hover:text-black cursor-pointer transition-colors">My Account</Link>
           <span className="text-gray-400">/</span>
-          <span className="text-gray-400 hover:text-black cursor-pointer transition-colors">Product</span>
+          <Link to="/details" className="text-gray-400 hover:text-black cursor-pointer transition-colors">Product</Link>
           <span className="text-gray-400">/</span>
-          <span className="text-gray-400 hover:text-black cursor-pointer transition-colors">View Cart</span>
+          <Link to="/cart" className="text-gray-400 hover:text-black cursor-pointer transition-colors">View Cart</Link>
           <span className="text-gray-400">/</span>
           <span className="text-black font-medium">CheckOut</span>
         </div>

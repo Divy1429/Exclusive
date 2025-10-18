@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
@@ -26,7 +27,7 @@ const Contact = () => {
         
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm mb-8 sm:mb-12 lg:mb-20">
-          <span className="text-gray-400 hover:text-black cursor-pointer transition-colors">Home</span>
+          <Link to="/" className="text-gray-400 hover:text-black cursor-pointer transition-colors">Home</Link>
           <span className="text-gray-400">/</span>
           <span className="text-black font-medium">Contact</span>
         </div>

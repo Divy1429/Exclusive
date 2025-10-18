@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import cooler from '../../assets/cooler.png';
 import gucci from '../../assets/gucci.png';
 import table from '../../assets/table.png';
@@ -100,6 +101,13 @@ const Wishlist = () => {
     <div className="w-full bg-white py-8 sm:py-12 sxl:pt-20 sxl:pb-35">
       <div className="max-w-[1170px] w-full mx-auto">
         
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2 text-sm mb-8 sm:mb-12 lg:mb-16">
+          <Link to="/" className="text-gray-400 hover:text-black cursor-pointer transition-colors">Home</Link>
+          <span className="text-gray-400">/</span>
+          <span className="text-black font-medium">Wishlist</span>
+        </div>
+
         {/* Wishlist Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 sm:mb-12 sxl:mb-16">
           <h2 className="text-xl sm:text-2xl font-normal font-['Inter']">

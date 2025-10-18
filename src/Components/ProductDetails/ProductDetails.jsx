@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import det1 from '../../assets/det1.png';
 import det2 from '../../assets/det2.png';
 import det3 from '../../assets/det3.png';
@@ -122,9 +123,9 @@ const ProductDetails = () => {
         
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs sm:text-sm mb-6 sm:mb-8 lg:mb-10 sxl:text-sm sxl:mb-20 flex-wrap">
-          <span className="text-gray-400 hover:text-black cursor-pointer">Account</span>
+          <Link to="/my-account" className="text-gray-400 hover:text-black cursor-pointer">Account</Link>
           <span className="text-gray-400">/</span>
-          <span className="text-gray-400 hover:text-black cursor-pointer">Gaming</span>
+          <Link to="/gaming" className="text-gray-400 hover:text-black cursor-pointer">Gaming</Link>
           <span className="text-gray-400">/</span>
           <span className="text-black">Havic HV G-92 Gamepad</span>
         </div>

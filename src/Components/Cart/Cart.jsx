@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import one from '../../Assets/1.png';
 import three from '../../Assets/3.png';
 
@@ -43,7 +44,7 @@ const Cart = () => {
         
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm mb-8 sm:mb-12 lg:mb-16">
-          <span className="text-gray-400 hover:text-black cursor-pointer transition-colors">Home</span>
+          <Link to="/" className="text-gray-400 hover:text-black cursor-pointer transition-colors">Home</Link>
           <span className="text-gray-400">/</span>
           <span className="text-black font-medium">Cart</span>
         </div>
@@ -137,9 +138,9 @@ const Cart = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row justify-between gap-4 mb-12 sm:mb-16 lg:mb-20">
-            <button className="bg-white hover:bg-gray-50 border border-black text-black px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 rounded font-medium transition-colors text-sm sm:text-base w-full sm:w-auto cursor-pointer">
+            <Link to="/" className="bg-white hover:bg-gray-50 border border-black text-black px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 rounded font-medium transition-colors text-sm sm:text-base w-full sm:w-auto cursor-pointer text-center">
               Return To Shop
-            </button>
+            </Link>
             <button className="bg-white hover:bg-gray-50 border border-black text-black px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 rounded font-medium transition-colors text-sm sm:text-base w-full sm:w-auto cursor-pointer">
               Update Cart
             </button>
@@ -187,9 +188,9 @@ const Cart = () => {
             </div>
 
             <div className="flex justify-center mt-4">
-              <button className="bg-[#DB4444] hover:bg-red-600 text-white px-8 sm:px-12 py-3 sm:py-4 rounded font-medium transition-colors text-sm sm:text-base cursor-pointer">
+              <Link to="/checkout" className="bg-[#DB4444] hover:bg-red-600 text-white px-8 sm:px-12 py-3 sm:py-4 rounded font-medium transition-colors text-sm sm:text-base cursor-pointer text-center">
                 Procees to checkout
-              </button>
+              </Link>
             </div>
           </div>
         </div>

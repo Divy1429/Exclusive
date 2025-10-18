@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import qr from '../../assets/qr.png';
 import app from '../../assets/app.png';
 import google from '../../assets/google.png';
@@ -59,29 +60,29 @@ export default function Footer() {
             <nav>
               <ul className="space-y-4 text-base">
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/my-account" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     My Account
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/login" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     Login / Register
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/cart" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     Cart
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/wishlist" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     Wishlist
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/shop" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     Shop
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -93,24 +94,24 @@ export default function Footer() {
             <nav>
               <ul className="space-y-4 text-base">
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/terms" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     Terms Of Use
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/faq" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
+                  <Link to="/contact" className="text-gray-300 hover:text-white transition-colors inline-block whitespace-nowrap">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

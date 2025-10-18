@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const MyAccount = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +41,7 @@ const MyAccount = () => {
         {/* Header with Breadcrumb and Welcome */}
         <div className="flex justify-between items-center mb-8 sm:mb-12 lg:mb-16">
           <div className="flex items-center gap-2 text-sm">
-            <span className="text-gray-400 hover:text-black cursor-pointer transition-colors">Home</span>
+            <Link to="/" className="text-gray-400 hover:text-black cursor-pointer transition-colors">Home</Link>
             <span className="text-gray-400">/</span>
             <span className="text-black font-medium">My Account</span>
           </div>
